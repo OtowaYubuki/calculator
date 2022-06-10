@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="test2.css">
+        <title>電卓</title>
+      </head>
+ 
+      <body>
+      <div id ="total"></div>
+       <button id = "seven" type="button" onclick="clickNumber7();">7</button>
+       <button id="eight" type = "button" onclick=clickNumber8();>8</button>
+       <button id="nine" type = "button" onclick=clickNumber9();>9</button>
+       
+       <button id="plus" type = "button" onclick=clickPlus();>+</button>
+       
+       <button id="four" type = "button" onclick=clickNumber4();>4</button>
+       <button id="five" type = "button" onclick=clickNumber5();>5</button>
+       <button id="six" type = "button" onclick=clickNumber6();>6</button>
+       
+       <button id="minus" type = "button" onclick=clickMinus();>-</button>
+       
+       <button id="one" type = "button" onclick=clickNumber1();>1</button>
+       <button id="two" type = "button" onclick=clickNumber2();>2</button>
+       <button id="three" type = "button" onclick=clickNumber3();>3</button>
+       
+       <button id="asterisk" type = "button" onclick=clickAsterisk();>*</button>
+       
+       <button id="zero" type = "button" onclick=clickNumber0();>0</button>
+       <button id="w_zero" type = "button" onclick=clickNumber00();>00</button>
+       
+       <button id="dots" type = "button" onclick=clickDots();>.</button>
+       <button id="slash" type = "button" onclick=clickSlash();>/</button>
+       <button id="AC_t" type = "button" onclick=clickAC();>AC</button>
+       <button id="equal" type = "button" onclick=clickEqual();>=</button>
+      <script type="text/javascript" src="test2.js" charset="utf-8"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+          /*global $*/
+            $(function() {
+            $('#plus').on('click', function() {
+            $('#plus').prop('disabled', true);
+             });
+               });
+      </script>
+      </body>
+    </html>
