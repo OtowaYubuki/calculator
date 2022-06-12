@@ -83,10 +83,134 @@ function clickEqual(){
 }
 
 //演算の連続入力の不可
-//「演算子を入力した時、入力済み結果の末尾が演算子の場合は末尾を削除して、新たに入力された演算子を付加する」
-/*global slice*/
-var mark = ['+','-','*','/','.'];
-let total = document.getElementById("total");
-if (total.slice(-1,-2) == mark) {
-      total.slice(-1,-2).style.display="none";
-    }
+plus.addEventListener("click",function(){
+plus.disabled = true;
+minus.disabled = true;
+asterisk.disabled = true;
+slash.disabled = true;
+})
+
+minus.addEventListener("click",function(){
+plus.disabled = true;
+minus.disabled = true;
+asterisk.disabled = true;
+slash.disabled = true;
+})
+
+asterisk.addEventListener("click",function(){
+plus.disabled = true;
+minus.disabled = true;
+asterisk.disabled = true;
+slash.disabled = true;
+})
+
+slash.addEventListener("click",function(){
+plus.disabled = true;
+minus.disabled = true;
+asterisk.disabled = true;
+slash.disabled = true;
+})
+
+dots.addEventListener("click",function(){
+plus.disabled = true;
+minus.disabled = true;
+asterisk.disabled = true;
+slash.disabled = true;
+})
+
+/*global AC*/
+AC_t.addEventListener("click",function(){
+plus.disabled = false;
+minus.disabled = false;
+asterisk.disabled = false;
+slash.disabled = false;
+})
+
+/*global seven*/
+seven.addEventListener("click",function(){
+plus.disabled = false;
+minus.disabled = false;
+asterisk.disabled = false;
+slash.disabled = false;
+})
+
+/*global eight*/
+eight.addEventListener("click",function(){
+plus.disabled = false;
+minus.disabled = false;
+asterisk.disabled = false;
+slash.disabled = false;
+})
+
+/*global nine*/
+nine.addEventListener("click",function(){
+plus.disabled = false;
+minus.disabled = false;
+asterisk.disabled = false;
+slash.disabled = false;
+})
+
+/*global six*/
+six.addEventListener("click",function(){
+plus.disabled = false;
+minus.disabled = false;
+asterisk.disabled = false;
+slash.disabled = false;
+})
+
+/*global five*/
+five.addEventListener("click",function(){
+plus.disabled = false;
+minus.disabled = false;
+asterisk.disabled = false;
+slash.disabled = false;
+})
+
+/*global four*/
+four.addEventListener("click",function(){
+plus.disabled = false;
+minus.disabled = false;
+asterisk.disabled = false;
+slash.disabled = false;
+})
+
+/*global three*/
+three.addEventListener("click",function(){
+plus.disabled = false;
+minus.disabled = false;
+asterisk.disabled = false;
+slash.disabled = false;
+})
+
+/*global two*/
+two.addEventListener("click",function(){
+plus.disabled = false;
+minus.disabled = false;
+asterisk.disabled = false;
+slash.disabled = false;
+})
+
+/*global one*/
+one.addEventListener("click",function(){
+plus.disabled = false;
+minus.disabled = false;
+asterisk.disabled = false;
+slash.disabled = false;
+})
+
+/*global zero*/
+zero.addEventListener("click",function(){
+plus.disabled = false;
+minus.disabled = false;
+asterisk.disabled = false;
+slash.disabled = false;
+})
+
+/*global w_zero*/
+w_zero.addEventListener("click",function(){
+plus.disabled = false;
+minus.disabled = false;
+asterisk.disabled = false;
+slash.disabled = false;
+})
+
