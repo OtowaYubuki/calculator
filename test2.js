@@ -1,17 +1,10 @@
-let seven = document.getElementById("seven");
-let six = document.getElementById("six");
-let five = document.getElementById("five");
-let four = document.getElementById("four");
-let three = document.getElementById("three");
-let two = document.getElementById("two");
-let one = document.getElementById("one");
-let zero = document.getElementById("zero");
-let w_zero = document.getElementById("w_zero");
 let dots = document.getElementById("dots");
 let slash = document.getElementById("slash");
 let minus = document.getElementById("minus");
 let equal = document.getElementById("equal");
 let AC_t = document.getElementById("AC_t");
+let plus = document.getElementById("plus");
+let asterisk = document.getElementById("asterisk");
 
 function clickNumber7(){
   total.innerHTML += "7"
@@ -90,4 +83,10 @@ function clickEqual(){
 }
 
 //演算の連続入力の不可
-
+//「演算子を入力した時、入力済み結果の末尾が演算子の場合は末尾を削除して、新たに入力された演算子を付加する」
+/*global slice*/
+var mark = ['+','-','*','/','.'];
+let total = document.getElementById("total");
+if (total.slice(-1,-2) == mark) {
+      total.slice(-1,-2).style.display="none";
+    }
