@@ -6,40 +6,63 @@ let AC_t = document.getElementById("AC_t");
 let plus = document.getElementById("plus");
 let asterisk = document.getElementById("asterisk");
 
+
+zero.disabled = true;
+w_zero.disabled = true;
+
+/*global total*/
 function clickNumber7(){
   total.innerHTML += "7"
+  zero.disabled = false;
+  w_zero.disabled = false;
 }
 
 function clickNumber8(){
   total.innerHTML += "8"
+  zero.disabled = false;
+  w_zero.disabled = false;
 }
 
 function clickNumber9(){
   total.innerHTML += "9"
+  zero.disabled = false;
+  w_zero.disabled = false;
 }
 
 function clickNumber4(){
   total.innerHTML += "4"
+  zero.disabled = false;
+  w_zero.disabled = false;
 }
 
 function clickNumber5(){
   total.innerHTML += "5"
+  zero.disabled = false;
+  w_zero.disabled = false;
 }
 
 function clickNumber6(){
   total.innerHTML += "6"
+  zero.disabled = false;
+  w_zero.disabled = false;
 }
 
 function clickNumber1(){
   total.innerHTML += "1"
+  zero.disabled = false;
+  w_zero.disabled = false;
 }
 
 function clickNumber2(){
   total.innerHTML += "2"
+  zero.disabled = false;
+  w_zero.disabled = false;
 }
 
 function clickNumber3(){
   total.innerHTML += "3"
+  zero.disabled = false;
+  w_zero.disabled = false;
 }
 
 function clickNumber0(){
@@ -52,6 +75,8 @@ function clickNumber00(){
 
 function clickAC(){
   total.innerHTML = null
+  zero.disabled = true;
+  w_zero.disabled = true;
 }
 
 function clickDots(){
@@ -72,10 +97,6 @@ function clickAsterisk(){
 
 function clickSlash(){
   total.innerHTML += "/"
-}
-
-function clickNumber00(){
-  total.innerHTML += "00"
 }
 
 function clickEqual(){
